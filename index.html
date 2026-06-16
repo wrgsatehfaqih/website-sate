@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Search Console verification meta tag goes here -->
+    <meta name="google-site-verification" content="your_verification_code_here" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B99ZDKR2N"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3B99ZDKR2N');
+    </script>
+
+    <!-- Meta Tags & SEO Dasar -->
+    <title>Warung Sate H. Faqih 1</title>
+    <meta name="description" content="Kelezatan sate legendaris dengan resep warisan keluarga yang dijaga sejak 1950 di Cukir, Jombang. Rasakan kuah gule medok dan sate kambing tanpa prengus.">
+    <meta name="keywords" content="warung sate, sate kambing jombang, gule kambing, sate legendaris, kuliner jombang, sate h faqih, sate ayam jombang, tempat makan keluarga jombang">
+    <meta name="author" content="Warung Sate H. Faqih 1">
+    <meta name="theme-color" content="#2A1A14">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.satefaqih1.com/">
+
+    <!-- Favicon & Web App Icons -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png?v=3">
+    <link rel="apple-touch-icon" href="assets/images/logo.png?v=3">
+
+    <!-- Meta Tags Open Graph (Facebook/WhatsApp) -->
+    <meta property="og:title" content="Warung Sate H. Faqih 1">
+    <meta property="og:description" content="Warisan rasa lintas generasi. Nikmati sate dan gule terbaik dengan resep autentik yang tak pernah berubah sejak 1950.">
+    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:url" content="https://www.satefaqih1.com/">
+    <meta property="og:type" content="restaurant">
+    <meta property="og:locale" content="id_ID">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Warung Sate H. Faqih 1",
+      "image": "assets/images/logo.png",
+      "@id": "https://www.satefaqih1.com/",
+      "url": "https://www.satefaqih1.com/",
+      "telephone": "+6281233912015",
+      "priceRange": "$$",
+      "menu": "https://www.satefaqih1.com/#menu",
+      "servesCuisine": "Indonesian, Satay, Curry",
+      "acceptsReservations": "True",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Raya Mojowarno No.297, Cukir",
+        "addressLocality": "Jombang",
+        "addressRegion": "Jawa Timur",
+        "postalCode": "61471",
+        "addressCountry": "ID"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -7.6108896,
+        "longitude": 112.2396608
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "1250"
+      }
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Tailwind Config -->
+    <script src="js/tailwind.config.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans text-brand-dark bg-brand-cream antialiased overflow-x-hidden">
+
+    <!-- Preloader / Layar Loading -->
+    <div id="preloader" class="fixed inset-0 z-[200] bg-brand-cream flex flex-col items-center justify-center">
+        <div class="animate-pulse flex flex-col items-center">
+            <!-- Asumsi ada logo di path ini, jika tidak gambar akan di-handle gracefully oleh flex layout -->
+            <img src="assets/images/logo.png?v=2" alt="Loading" class="h-36 md:h-48 lg:h-56 w-auto mb-6 drop-shadow-md fallback-img">
+            <div class="w-16 h-1 bg-brand-gold rounded-full relative overflow-hidden">
+                <div class="absolute top-0 left-0 h-full bg-brand-orange w-1/2 animate-[marqueeRight_1s_ease-in-out_infinite]"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal / Lightbox -->
+    <div id="lightbox-modal" class="fixed inset-0 z-[100] hidden bg-brand-dark/95 flex items-center justify-center p-4 md:p-8 opacity-0 transition-opacity duration-300" onclick="closeModal()">
+        <div id="modal-dialog" class="modal-3d bg-brand-cream max-w-6xl w-full max-h-[90vh] rounded-xl overflow-hidden shadow-2xl grid xl:grid-cols-[58%_42%] max-xl:flex max-xl:flex-col relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal()" class="absolute top-2 right-4 text-gray-400 hover:text-brand-orange text-4xl focus:outline-none z-[101] transition-colors">&times;</button>
+            <div id="modal-image-wrapper" class="w-full h-auto bg-brand-dark flex items-center justify-center overflow-hidden gallery-modal-image-wrapper">
+                <img id="modal-img" src="" alt="Detail Image" onerror="this.onerror=null; this.src='assets/images/Warung.png';" class="w-full h-full max-h-[90vh] object-cover object-center">
+            </div>
+            <div class="w-full p-6 overflow-y-auto flex flex-col justify-center" id="modal-content">
+                <h3 id="modal-title" class="font-serif text-3xl md:text-4xl font-bold text-brand-dark mb-4 pr-6">Title</h3>
+                <p id="modal-role" class="modal-role hidden uppercase text-brand-orange font-bold text-sm tracking-wide mb-4"></p>
+                <div class="modal-divider w-16 h-1 bg-brand-orange mb-6"></div>
+                <p id="modal-desc" class="modal-desc text-gray-700 leading-relaxed text-base md:text-lg mb-8">Description goes here.</p>
+                <div id="modal-extra" class="modal-quote bg-brand-light p-4 md:p-5 border-l-4 border-brand-gold text-sm md:text-base text-brand-brown italic">Extra info</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navbar Utama (Diperbarui dengan Top Bar) -->
+<header id="main-header" class="fixed w-full z-50 transition-transform duration-300">
+    <nav class="site-navbar navbar-top w-full bg-brand-cream/95 backdrop-blur-md border-b border-brand-gold/20 shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-[1700px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
+
+            <!-- Desktop / Tablet Layout -->
+            <div class="hidden lg:grid grid-cols-[1fr_auto_1fr] items-center h-20 lg:h-24 w-full gap-8 lg:gap-12">
+
+                <!-- KIRI -->
+                <div class="flex items-center justify-between w-full pr-4 lg:pr-8">
+                    
+                    <!-- Social Icons -->
+                    <div class="flex items-center gap-3 lg:gap-4 shrink-0 border-r border-brand-brown/20 pr-4 lg:pr-5">
+                        <a href="https://www.facebook.com/profile.php?id=61579554899186" target="_blank" rel="noopener noreferrer" class="nav-social-icon text-brand-dark hover:text-brand-orange transition-colors text-base lg:text-lg">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sate.faqih1" target="_blank" rel="noopener noreferrer" class="nav-social-icon text-brand-dark hover:text-brand-orange transition-colors text-base lg:text-lg">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@sate.faqih1" target="_blank" rel="noopener noreferrer" class="nav-social-icon text-brand-dark hover:text-brand-orange transition-colors text-base lg:text-lg">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+
+                    <!-- Left Menu -->
+                    <div class="flex items-center gap-5 lg:gap-8 xl:gap-10">
+                        <a href="#about" class="nav-link text-brand-dark text-[11px] lg:text-xs xl:text-sm font-bold hover:text-brand-orange transition-colors uppercase tracking-[0.18em] relative group" data-i18n="nav_about">
+                            Tentang
+                            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-orange transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+
+                        <a href="#menu" class="nav-link text-brand-dark text-[11px] lg:text-xs xl:text-sm font-bold hover:text-brand-orange transition-colors uppercase tracking-[0.18em] relative group" data-i18n="nav_menu">
+                            Menu
+                            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-orange transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+
+                        <a href="#history" class="nav-link text-brand-dark text-[11px] lg:text-xs xl:text-sm font-bold hover:text-brand-orange transition-colors uppercase tracking-[0.18em] relative group" data-i18n="nav_history">
+                            Sejarah
+                            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-orange transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TENGAH: LOGO -->
+                <div class="flex items-center justify-center px-3 lg:px-4">
+                    <a href="#home" class="nav-link nav-logo-link transform hover:scale-105 transition-transform duration-300" aria-label="Beranda">
+                        <img id="nav-logo"
+                             src="assets/images/logo.png?v=2"
+                             alt="Logo Warung Sate H. Faqih 1"
+                             class="h-16 lg:h-20 w-auto object-contain drop-shadow-md fallback-img">
+                    </a>
+                </div>
+
+                <!-- KANAN -->
+                <div class="flex items-center justify-between w-full pl-4 lg:pl-8">
+                    
+                    <!-- Right Menu -->
+                    <div class="flex items-center gap-5 lg:gap-8 xl:gap-10">
+                        <a href="#guests" class="nav-link text-brand-dark text-[11px] lg:text-xs xl:text-sm font-bold hover:text-brand-orange transition-colors uppercase tracking-[0.18em] relative group" data-i18n="nav_guests">
+                            Galeri Foto
+                            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-orange transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+
+                        <a href="#faq" class="nav-link text-brand-dark text-[11px] lg:text-xs xl:text-sm font-bold hover:text-brand-orange transition-colors uppercase tracking-[0.18em] relative group" data-i18n="nav_faq">
+                            FAQ
+                            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-orange transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+
+                        <a href="#location" class="nav-link text-brand-dark text-[11px] lg:text-xs xl:text-sm font-bold hover:text-brand-orange transition-colors uppercase tracking-[0.18em] relative group" data-i18n="nav_location">
+                            Lokasi
+                            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-orange transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                    </div>
+
+                    <!-- Language Switcher -->
+                    <div class="language-toggle language-switcher shrink-0 ml-4" role="group" aria-label="Language switcher" data-active="id">
+                        <span class="language-toggle-indicator" aria-hidden="true"></span>
+                        <button id="btn-id" data-lang="id" type="button" class="language-btn lang-btn active" aria-pressed="true">
+                            ID
+                        </button>
+                        <button id="btn-en" data-lang="en" type="button" class="language-btn lang-btn" aria-pressed="false">
+                            EN
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Layout -->
+            <div class="lg:hidden flex justify-between items-center h-20 relative">
+                <button id="mobile-menu-btn" class="text-brand-dark text-2xl p-2 focus:outline-none z-10" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center pointer-events-auto z-50">
+                    <a href="#home" class="nav-link nav-logo-link" aria-label="Beranda">
+                        <img id="nav-logo-mob"
+                             src="assets/images/logo.png?v=2"
+                             alt="Logo H. Faqih 1"
+                             class="h-14 w-auto object-contain drop-shadow-md fallback-img">
+                    </a>
+                </div>
+
+                <div class="flex items-center z-10">
+                    <div class="language-toggle language-switcher" role="group" aria-label="Language switcher" data-active="id">
+                        <span class="language-toggle-indicator" aria-hidden="true"></span>
+                        <button id="btn-id-mob" data-lang="id" type="button"
+                            class="language-btn lang-btn active" aria-pressed="true">
+                            ID
+                        </button>
+
+                        <button id="btn-en-mob" data-lang="en" type="button"
+                            class="language-btn lang-btn" aria-pressed="false">
+                            EN
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-brand-cream border-b border-brand-gold/20 absolute w-full shadow-2xl">
+            <div class="px-4 pt-4 pb-8 flex flex-col items-center space-y-4">
+                <a href="#about" class="mobile-link text-sm font-bold uppercase tracking-widest text-brand-dark hover:text-brand-orange" data-i18n="nav_about">Tentang</a>
+                <a href="#menu" class="mobile-link text-sm font-bold uppercase tracking-widest text-brand-dark hover:text-brand-orange" data-i18n="nav_menu">Menu</a>
+                <a href="#history" class="mobile-link text-sm font-bold uppercase tracking-widest text-brand-dark hover:text-brand-orange" data-i18n="nav_history">Sejarah</a>
+                <a href="#guests" class="mobile-link text-sm font-bold uppercase tracking-widest text-brand-dark hover:text-brand-orange" data-i18n="nav_guests">Galeri</a>
+                <a href="#faq" class="mobile-link text-sm font-bold uppercase tracking-widest text-brand-dark hover:text-brand-orange" data-i18n="nav_faq">FAQ</a>
+                <a href="#location" class="mobile-link text-sm font-bold uppercase tracking-widest text-brand-dark hover:text-brand-orange" data-i18n="nav_location">Lokasi</a>
+
+                <div class="flex space-x-6 pt-6 border-t border-brand-gold/20 w-1/2 justify-center">
+                    <a href="https://www.instagram.com/sate.faqih1" target="_blank" rel="noopener noreferrer" class="text-brand-dark text-xl hover:text-brand-orange transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@sate.faqih1" target="_blank" rel="noopener noreferrer" class="text-brand-dark text-xl hover:text-brand-orange transition-colors">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61579554899186" target="_blank" rel="noopener noreferrer" class="text-brand-dark text-xl hover:text-brand-orange transition-colors">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <!-- Hero Section (Efek Fade / Pudar) -->
+    <section class="hero-section relative bg-[#EBE5DE] overflow-hidden" id="home">
+        
+        <!-- Slider Container (Tumpukan Gambar) -->
+        <div id="hero-track" class="absolute inset-0 w-full h-full">
+            
+            <!-- SLIDE 1 -->
+<div class="hero-slide absolute inset-0 w-full h-full flex items-center transition-opacity duration-1000 ease-in-out opacity-100 z-20">
+
+    <!-- Background Image Full -->
+    <div class="absolute inset-0">
+        <picture class="block w-full h-full">
+            <source media="(max-width: 767px)" srcset="assets/images/Warung-mobile.png">
+            <source media="(min-width: 768px) and (max-width: 1024px) and (orientation: portrait)" srcset="assets/images/Warung-tablet.png">
+            <img
+                src="assets/images/Warung.png"
+                alt="Suasana Warung Sate H. Faqih 1"
+                class="hero-bg hero-bg-warung scroll-depth w-full h-full object-cover"
+            >
+        </picture>
+    </div>
+
+    <!-- Overlay tipis agar gambar tidak terlalu silau -->
+    <div class="absolute inset-0 hero-overlay bg-black/25"></div>
+
+    <!-- Content -->
+    <div class="hero-content relative z-20 w-full h-full flex items-center">
+        <div class="hero-content-inner">
+
+            <!-- Kotak transparan hanya di bagian tulisan -->
+            <div class="hero-card glass-3d text-left">
+
+                <span class="hero-badge text-brand-orange font-bold uppercase block" data-i18n="hero_badge_0">
+                    Warisan Lintas Generasi
+                </span>
+
+                <h1 class="hero-title font-serif font-extrabold text-white uppercase w-full">
+                    <span class="hero-title-main block transition-transform drop-shadow-sm" data-i18n="hero_title_0_main">
+                        Warung Sate
+                    </span>
+
+                    <span class="hero-title-sub text-brand-gold italic normal-case font-bold block drop-shadow-sm" data-i18n="hero_title_0_sub">
+                        H. FAQIH 1
+                    </span>
+                </h1>
+
+                <p id="typewriter-text-0"
+                   class="hero-description text-gray-100 font-medium"
+                   data-i18n="hero_sub_0">
+                    <!-- Teks akan diketik otomatis -->
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- SLIDE 2 -->
+        <div class="hero-slide absolute inset-0 w-full h-full flex items-center transition-opacity duration-1000 ease-in-out opacity-0 z-10">
+
+    <!-- Background Image Full, tetap terlihat jelas -->
+    <div class="absolute inset-0">
+        <picture class="block w-full h-full">
+            <source media="(max-width: 767px)" srcset="assets/images/Sate-Kambing-mobile.png">
+            <source media="(min-width: 768px) and (max-width: 1024px) and (orientation: portrait)" srcset="assets/images/Sate-Kambing-tablet.png">
+            <img
+                src="assets/images/Sate Kambing (2).png"
+                alt="Sate Kambing empuk khas Warung Sate H. Faqih 1"
+                class="hero-bg hero-bg-sate scroll-depth w-full h-full object-cover"
+            >
+        </picture>
+    </div>
+
+    <!-- Overlay tipis saja, agar gambar tidak terlalu silau -->
+    <div class="absolute inset-0 hero-overlay bg-black/25"></div>
+
+    <!-- Content -->
+    <div class="hero-content relative z-20 w-full h-full flex items-center">
+        <div class="hero-content-inner">
+            
+            <!-- Kotak transparan hanya di bagian tulisan -->
+            <div class="hero-card glass-3d text-left">
+
+                <span class="hero-badge text-brand-orange font-bold uppercase block" data-i18n="hero_badge_1">
+                    Cita Rasa Autentik
+                </span>
+
+                <h1 class="hero-title font-serif font-extrabold text-white uppercase w-full">
+                    <span class="hero-title-main block transition-transform drop-shadow-sm" data-i18n="hero_title_1_main">
+                        Sate Kambing
+                    </span>
+
+                    <span class="hero-title-sub text-brand-gold italic normal-case font-bold block drop-shadow-sm" data-i18n="hero_title_1_sub">
+                        Legendaris
+                    </span>
+                </h1>
+
+                <p id="typewriter-text-1"
+                   class="hero-description text-gray-100 font-medium"
+                   data-i18n="hero_sub_1">
+                    <!-- Teks akan diketik otomatis -->
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- SLIDE 3 -->
+<div class="hero-slide absolute inset-0 w-full h-full flex items-center transition-opacity duration-1000 ease-in-out opacity-0 z-10">
+
+    <!-- Background Image Full -->
+    <div class="absolute inset-0">
+        <picture class="block w-full h-full">
+            <source media="(max-width: 767px)" srcset="assets/images/Gule-Kambing-mobile.png">
+            <source media="(min-width: 768px) and (max-width: 1024px) and (orientation: portrait)" srcset="assets/images/Gule-Kambing-tablet.png">
+            <img
+                src="assets/images/Gule Kambing.png"
+                alt="Gule Kambing H. Faqih 1 dengan kuah medok kaya rempah"
+                class="hero-bg hero-bg-gule scroll-depth w-full h-full object-cover"
+            >
+        </picture>
+    </div>
+
+    <!-- Overlay tipis agar gambar tidak terlalu silau -->
+    <div class="absolute inset-0 hero-overlay bg-black/25"></div>
+
+    <!-- Content -->
+    <div class="hero-content relative z-20 w-full h-full flex items-center">
+        <div class="hero-content-inner">
+
+            <!-- Kotak transparan hanya di bagian tulisan -->
+            <div class="hero-card glass-3d text-left">
+
+                <span class="hero-badge text-brand-orange font-bold uppercase block" data-i18n="hero_badge_2">
+                    Kuah Medok Kaya Rempah
+                </span>
+
+                <h1 class="hero-title font-serif font-extrabold text-white uppercase w-full">
+                    <span class="hero-title-main block transition-transform drop-shadow-sm" data-i18n="hero_title_2_main">
+                        Gule Kambing
+                    </span>
+
+                    <span class="hero-title-sub text-brand-gold italic normal-case font-bold block drop-shadow-sm" data-i18n="hero_title_2_sub">
+                        Spesial
+                    </span>
+                </h1>
+
+                <p id="typewriter-text-2"
+                   class="hero-description text-gray-100 font-medium"
+                   data-i18n="hero_sub_2">
+                    <!-- Teks akan diketik otomatis -->
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Slider Navigation Dots -->
+        <div class="slider-dots absolute left-1/2 transform -translate-x-1/2 flex space-x-3 z-30">
+            <button onclick="goToSlide(0)" class="slider-dot w-3 h-3 rounded-full bg-white border border-gray-400 ring-4 ring-white/30 scale-125 transition-all duration-300 shadow-md" aria-label="Slide 1"></button>
+
+            <button onclick="goToSlide(1)" class="slider-dot w-3 h-3 rounded-full bg-white/50 border border-transparent scale-100 hover:bg-white/80 transition-all duration-300 shadow-md" aria-label="Slide 2"></button>
+
+            <button onclick="goToSlide(2)" class="slider-dot w-3 h-3 rounded-full bg-white/50 border border-transparent scale-100 hover:bg-white/80 transition-all duration-300 shadow-md" aria-label="Slide 3"></button>
+        </div>
+    </section>
+
+    <!-- Nostalgia & About Section -->
+    <section id="about" class="premium-section py-10 lg:py-12 bg-brand-light relative">
+        <!-- Ruang Memori (Nostalgia) -->
+        <div class="w-full px-4 sm:px-8 lg:px-16 xl:px-24 text-center reveal border-b border-brand-gold/10 pb-8 mb-8">
+            <i class="fa-solid fa-heart block text-brand-orange text-3xl mb-5 opacity-90 leading-none"></i>
+            <h2 class="font-serif text-3xl md:text-4xl font-bold text-brand-dark mb-6" data-i18n="nostalgia_title">Ruang Memori Lintas Generasi</h2>
+            <p class="max-w-4xl mx-auto text-brand-brown/90 leading-relaxed text-lg md:text-xl font-medium" data-i18n="nostalgia_desc">
+                Warung Sate H. Faqih 1 bukanlah sekadar tempat singgah untuk bersantap. Di sini, meja dan kursi kami menjadi saksi bisu dari kakek yang mengenalkan rasa otentik kepada cucunya, hingga para <span class="font-bold text-brand-orange">santri, warga sekitar, keluarga, dan pendatang</span> yang selalu kembali karena rindu pada cita rasa khas Cukir. Setiap kepulan asap sate membawa kehangatan cerita, kebersamaan, dan silaturahmi yang tak pernah putus sejak 1950.
+            </p>
+        </div>
+
+        <!-- Fasilitas & Icon (Fitur Baru) -->
+        <div class="w-full px-4 sm:px-8 lg:px-16 xl:px-24 text-center reveal delay-100">
+            <h3 class="text-brand-orange font-bold tracking-widest text-sm md:text-base uppercase mb-10" data-i18n="fac_title">Kenyamanan Anda Prioritas Kami</h3>
+            <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-10">
+            <!-- Fac 1 -->
+            <div class="flex flex-col items-center bg-white p-8 md:p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-brand-gold/10">
+                <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-brand-light flex items-center justify-center mb-5 text-brand-orange text-3xl md:text-4xl shadow-inner">
+                    <i class="fas fa-chair"></i>
+                </div>
+                <h4 class="font-bold text-brand-dark text-base md:text-lg" data-i18n="fac_1">Suasana Nyaman</h4>
+            </div>
+
+            <!-- Fac 2 -->
+            <div class="flex flex-col items-center bg-white p-8 md:p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-brand-gold/10">
+                <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-brand-light flex items-center justify-center mb-5 text-brand-orange text-3xl md:text-4xl shadow-inner">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h4 class="font-bold text-brand-dark text-base md:text-lg" data-i18n="fac_2">Ramah Keluarga</h4>
+            </div>
+
+            <!-- Fac 3 -->
+            <div class="flex flex-col items-center bg-white p-8 md:p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-brand-gold/10">
+                <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-brand-light flex items-center justify-center mb-5 text-brand-orange text-3xl md:text-4xl shadow-inner">
+                    <i class="fas fa-user-friends"></i>
+                </div>
+                <h4 class="font-bold text-brand-dark text-base md:text-lg" data-i18n="fac_3">Cocok untuk Rombongan</h4>
+            </div>
+
+            <!-- Fac 4 -->
+            <div class="flex flex-col items-center bg-white p-8 md:p-10 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-brand-gold/10">
+                <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-brand-light flex items-center justify-center mb-5 text-brand-orange text-3xl md:text-4xl shadow-inner">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h4 class="font-bold text-brand-dark text-base md:text-lg" data-i18n="fac_4">Pelayanan Ramah</h4>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Menu Section -->
+    <section id="menu" class="premium-section premium-menu-section py-12 lg:py-16 bg-white relative">
+        <div class="w-full px-4 sm:px-8 lg:px-16 xl:px-24">
+            <div class="text-center mb-8 reveal">
+                <span class="text-brand-orange font-medium tracking-widest text-sm uppercase" data-i18n="menu_subtitle">Warisan Rasa</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-dark mt-2 mb-4" data-i18n="menu_title">Menu Unggulan Kami</h2>
+                <div class="w-24 h-1 bg-brand-gold mx-auto"></div>
+                <p class="text-gray-600 mt-6" data-i18n="menu_instruction">Klik foto untuk melihat detail menu.</p>
+            </div>
+
+            <!-- Grid Menu Utama -->
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8 mb-8">
+                <!-- Menu 1 -->
+                <div class="reveal reveal-3d card-3d relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl group cursor-pointer h-[280px] md:h-[320px] lg:h-[340px] transition-all duration-500" onclick="openModal('assets/images/Sate Kambing (3).png', 'menu_1_title', 'menu_1_desc', 'menu_1_extra')">                    <!-- Alt Text dioptimasi -->
+                     <img loading="lazy" src="assets/images/Sate Kambing (3).png" alt="Menu Sate Kambing Empuk Jombang" class="menu-card-image absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="menu-card-content absolute inset-0 p-6 lg:p-8 flex flex-col justify-center w-[95%] sm:w-[85%] transform -translate-x-12 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+                        <p class="text-[10px] font-bold text-brand-orange uppercase tracking-widest mb-1 lg:mb-2" data-i18n="menu_type_sate">Aneka Sate</p>
+                        <h3 class="menu-card-title font-serif text-2xl lg:text-3xl font-bold text-white mb-3 drop-shadow-md" data-i18n="menu_1_title">Sate Kambing</h3>
+                        <span class="inline-block px-3 py-1 bg-brand-orange text-white text-[10px] font-bold uppercase tracking-wider rounded-md mb-3 self-start shadow-sm" data-i18n="menu_badge_best">Best Seller</span>
+                        <p class="menu-card-desc text-brand-cream/90 pb-1" data-i18n="menu_1_short">Potongan daging kambing  pilihan yang sangat empuk, dibakar sempurna di atas arang.</p>
+                        <p class="menu-card-feature text-brand-gold"><i class="fas fa-check-circle text-white opacity-80"></i> <span class="menu-card-feature-text" data-i18n="menu_1_char">Tanpa prengus, disajikan dengan kecap & irisan bawang segar.</span></p>
+                        <div class="menu-card-detail-link menu-card-cta flex items-center gap-2 text-brand-orange text-xs font-bold uppercase tracking-widest group-hover:text-brand-gold transition-colors"><i class="fas fa-search-plus text-base"></i> <span data-i18n="menu_detail_link">Klik untuk Detail</span></div>
+                    </div>
+                </div>
+
+                <!-- Menu 2 -->
+                <div class="reveal delay-100 reveal-3d card-3d relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl group cursor-pointer h-[280px] md:h-[320px] lg:h-[340px] transition-all duration-500" onclick="openModal('assets/images/Sate Ayam(2).png', 'menu_2_title', 'menu_2_desc', 'menu_2_extra')">
+                    <!-- Alt Text dioptimasi -->
+                    <img loading="lazy" src="assets/images/Sate Ayam(2).png" alt="Menu Sate Ayam Bumbu Kacang Legendaris" class="menu-card-image absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="menu-card-content absolute inset-0 p-6 lg:p-8 flex flex-col justify-center w-[95%] sm:w-[85%] transform -translate-x-12 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+                        <p class="text-[10px] font-bold text-brand-orange uppercase tracking-widest mb-1 lg:mb-2" data-i18n="menu_type_sate">Aneka Sate</p>
+                        <h3 class="menu-card-title font-serif text-2xl lg:text-3xl font-bold text-white mb-3 drop-shadow-md" data-i18n="menu_2_title">Sate Ayam Legendaris</h3>
+                        <span class="inline-block px-3 py-1 bg-brand-gold text-brand-dark text-[10px] font-bold uppercase tracking-wider rounded-md mb-3 self-start shadow-sm" data-i18n="menu_badge_family">Favorite Keluarga</span>
+                        <p class="menu-card-desc text-brand-cream/90 pb-1" data-i18n="menu_2_short">Daging ayam tebal dan juicy, dilumuri bumbu kacang rahasia yang legit dan meresap hingga ke dalam serat daging.</p>
+                        <p class="menu-card-feature text-brand-gold"><i class="fas fa-check-circle text-white opacity-80"></i> <span class="menu-card-feature-text" data-i18n="menu_2_char">Bumbu kacang ditumbuk manual, tekstur autentik.</span></p>
+                        <div class="menu-card-detail-link menu-card-cta flex items-center gap-2 text-brand-orange text-xs font-bold uppercase tracking-widest group-hover:text-brand-gold transition-colors"><i class="fas fa-search-plus text-base"></i> <span data-i18n="menu_detail_link">Klik untuk Detail</span></div>
+                    </div>
+                </div>
+
+                <!-- Menu 3 -->
+                <div class="reveal reveal-3d card-3d relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl group cursor-pointer h-[280px] md:h-[320px] lg:h-[340px] transition-all duration-500" onclick="openModal('assets/images/gule-kambing-2.png', 'menu_3_title', 'menu_3_desc', 'menu_3_extra')">
+                <img loading="lazy" src="assets/images/gule-kambing-2.png" alt="Gule Kambing" class="menu-card-image absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="menu-card-content absolute inset-0 p-6 lg:p-8 flex flex-col justify-center w-[95%] sm:w-[85%] transform -translate-x-12 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+                        <p class="text-[10px] font-bold text-brand-orange uppercase tracking-widest mb-1 lg:mb-2" data-i18n="menu_type_gule">Aneka Gule & Berkuah</p>
+                        <h3 class="menu-card-title font-serif text-2xl lg:text-3xl font-bold text-white mb-3 drop-shadow-md" data-i18n="menu_3_title">Gule Kambing Spesial</h3>
+                        <span class="inline-block px-3 py-1 bg-[#1A1A1A] border border-gray-600 text-white text-[10px] font-bold uppercase tracking-wider rounded-md mb-3 self-start shadow-sm" data-i18n="menu_badge_recommended">Recommended</span>
+                        <p class="menu-card-desc text-brand-cream/90 pb-1" data-i18n="menu_3_short">Kuah gule bersantan kental kaya rempah Nusantara, dimasak perlahan bersama potongan daging dan tulang.</p>
+                        <p class="menu-card-feature text-brand-gold"><i class="fas fa-check-circle text-white opacity-80"></i> <span class="menu-card-feature-text" data-i18n="menu_3_char">Kuah medok, daging sangat mudah lepas dari tulang.</span></p>
+                        <div class="menu-card-detail-link menu-card-cta flex items-center gap-2 text-brand-orange text-xs font-bold uppercase tracking-widest group-hover:text-brand-gold transition-colors"><i class="fas fa-search-plus text-base"></i> <span data-i18n="menu_detail_link">Klik untuk Detail</span></div>
+                    </div>
+                </div>
+
+                <!-- Menu 4 -->
+                <div class="reveal delay-100 reveal-3d card-3d relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl group cursor-pointer h-[280px] md:h-[320px] lg:h-[340px] transition-all duration-500" onclick="openModal('assets/images/Gule-Kikil.png', 'menu_4_title', 'menu_4_desc', 'menu_4_extra')">
+                    <img loading="lazy" src="assets/images/Gule-Kikil.png" alt="Gule Kikil Kambing" class="menu-card-image absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="menu-card-content absolute inset-0 p-6 lg:p-8 flex flex-col justify-center w-[95%] sm:w-[85%] transform -translate-x-12 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500 ease-out">
+                        <p class="text-[10px] font-bold text-brand-orange uppercase tracking-widest mb-1 lg:mb-2" data-i18n="menu_type_gule">Aneka Gule & Berkuah</p>
+                        <h3 class="menu-card-title font-serif text-2xl lg:text-3xl font-bold text-white mb-3 drop-shadow-md" data-i18n="menu_4_title">Gule Kikil Kambing</h3>
+                        <span class="inline-block px-3 py-1 bg-brand-brown text-white text-[10px] font-bold uppercase tracking-wider rounded-md mb-3 self-start shadow-sm" data-i18n="menu_badge_texture">Favorite Pecinta Tekstur</span>
+                        <p class="menu-card-desc text-brand-cream/90 pb-1" data-i18n="menu_4_short">Tekstur kikil yang kenyal dan lembut berpadu sempurna dengan kuah gule rempah rahasia khas H. Faqih.</p>
+                        <p class="menu-card-feature text-brand-gold"><i class="fas fa-check-circle text-white opacity-80"></i> <span class="menu-card-feature-text" data-i18n="menu_4_char">Kaya kolagen, lumer di mulut tanpa bau menyengat.</span></p>
+                        <div class="menu-card-detail-link menu-card-cta flex items-center gap-2 text-brand-orange text-xs font-bold uppercase tracking-widest group-hover:text-brand-gold transition-colors"><i class="fas fa-search-plus text-base"></i> <span data-i18n="menu_detail_link">Klik untuk Detail</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jelajahi Menu Lengkap (Order Redirect) -->
+            <div class="reveal bg-brand-cream border border-brand-gold/20 p-8 md:p-10 rounded-2xl text-center shadow-md relative overflow-hidden">
+                <!-- Efek cahaya (glow) dekoratif di sudut -->
+                <div class="absolute -top-10 -right-10 w-32 h-32 bg-brand-gold/10 rounded-full blur-2xl pointer-events-none"></div>
+                <div class="absolute -bottom-10 -left-10 w-32 h-32 bg-brand-orange/10 rounded-full blur-2xl pointer-events-none"></div>
+                
+                <h4 class="font-serif font-bold text-brand-dark text-2xl md:text-3xl mb-4 relative z-10" data-i18n="menu_full_title">Lihat Menu Selengkapnya</h4>
+                <p class="text-gray-600 text-sm md:text-base max-w-2xl mx-auto mb-8 relative z-10 leading-relaxed" data-i18n="menu_full_desc">
+                    Kami menyediakan berbagai hidangan khas Warung Sate H. Faqih 1, mulai dari sate, gule, aneka minuman segar, hingga pilihan pelengkap lainnya. Temukan menu lengkap kami dan langsung pesan melalui platform pengiriman favorit Anda:                
+                </p>
+                
+                <!-- Tombol Aplikasi Delivery -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3 mt-6 relative z-10">
+                    
+                    <a href="https://food.grab.com/id/id/restaurant/warung-sate-h-faqih-1-cukir-delivery/6-C2BXGKDANA2ER2" target="_blank" rel="noopener noreferrer" onclick="trackEvent('click_grabfood', { event_category: 'order', event_label: 'GrabFood' })" class="order-btn cta-3d w-full min-w-0 px-4 py-3 bg-gradient-to-r from-[#00B14F] to-[#009140] text-white rounded-xl hover:scale-[1.03] hover:shadow-[0_10px_25px_rgba(0,177,79,0.4)] transition-all duration-300 flex items-center justify-center gap-2 shadow-lg whitespace-nowrap overflow-hidden">
+                        <img loading="lazy" src="assets/images/grabfood.png" alt="GrabFood" class="w-7 h-7 md:w-8 md:h-8 object-contain shrink-0">
+                        <span class="truncate font-bold text-[15px] md:text-lg tracking-tight">GrabFood</span>
+                    </a>
+
+                    <a href="https://gofood.link/a/yXVsXZS" target="_blank" rel="noopener noreferrer" onclick="trackEvent('click_gofood', { event_category: 'order', event_label: 'GoFood' })" class="order-btn cta-3d w-full min-w-0 px-4 py-3 bg-gradient-to-r from-[#EE2737] to-[#D11C28] text-white rounded-xl hover:scale-[1.03] hover:shadow-[0_10px_25px_rgba(238,39,55,0.4)] transition-all duration-300 flex items-center justify-center gap-2 shadow-lg whitespace-nowrap overflow-hidden">
+                        <img loading="lazy" src="assets/images/gofood.png" alt="GoFood" class="w-7 h-7 md:w-8 md:h-8 object-contain shrink-0">
+                        <span class="truncate font-bold text-[15px] md:text-lg tracking-tight">GoFood</span>
+                    </a>
+
+                    <a href="https://shopee.co.id/universal-link/now-food/shop/22797679" target="_blank" rel="noopener noreferrer" onclick="trackEvent('click_shopeefood', { event_category: 'order', event_label: 'ShopeeFood' })" class="order-btn cta-3d w-full min-w-0 px-4 py-3 bg-gradient-to-r from-[#EE4D2D] to-[#D13C1C] text-white rounded-xl hover:scale-[1.03] hover:shadow-[0_10px_25px_rgba(238,77,45,0.4)] transition-all duration-300 flex items-center justify-center gap-2 shadow-lg whitespace-nowrap overflow-hidden">
+                        <img loading="lazy" src="assets/images/shopeefood.png" alt="ShopeeFood" class="w-7 h-7 md:w-8 md:h-8 object-contain shrink-0">
+                        <span class="truncate font-bold text-[15px] md:text-lg tracking-tight">ShopeeFood</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History / Founder Section -->
+    <section id="history" class="cinematic-history py-16 lg:py-24 relative bg-brand-dark border-t-8 border-brand-orange overflow-hidden">
+        <div id="watermark-1950" class="absolute top-10 md:top-1/2 left-1/2 transform -translate-x-1/2 md:-translate-y-1/2 font-serif font-bold text-watermark pointer-events-none z-0 transition-transform duration-100 ease-out">
+            1950
+        </div>
+        
+        <div class="history-section-container relative z-10">
+            <div class="text-center mb-12 lg:mb-16 reveal">
+                <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-brand-gold mb-6" data-i18n="history_title">Sejarah & Kisah Pendiri</h2>
+                <div class="w-24 h-1 bg-brand-orange mx-auto"></div>
+            </div>
+
+            <div class="history-box mb-16 lg:mb-24 bg-white/5 backdrop-blur-sm border border-brand-gold/20 rounded-sm reveal">
+                <div class="history-layout">
+                    <div class="history-left history-photo-wrap relative">
+                        <img loading="lazy" src="assets/images/Pendiri1.png" alt="Alm. H. Faqih" class="history-photo image-depth scroll-depth border-4 border-brand-gold/50 shadow-2xl">
+                        <div class="mt-3 inline-block bg-brand-gold text-brand-dark px-5 py-3 font-serif font-bold text-base sm:text-lg lg:text-xl shadow-lg lg:absolute lg:mt-0 lg:-bottom-6 lg:-right-6" data-i18n="founder_label">
+                            Alm. H. Faqih
+                        </div>
+                    </div>
+                    <div class="history-right text-left">
+                        <i class="fas fa-quote-left text-4xl sm:text-5xl text-brand-gold/30 mb-4 block"></i>
+                        <p class="history-quote font-serif text-white italic" data-i18n="history_quote">
+                            "Dari ketulusan, perjuangan, dan kesederhanaan, lahirlah warisan rasa yang terus dikenang lintas generasi."
+                        </p>
+                        <div class="history-text text-brand-cream/80 space-y-5">
+                            <p data-i18n="history_founder_desc1">Alm. H. Faqih merupakan salah satu santri yang pernah menimba ilmu di Pondok Pesantren Tebuireng dan termasuk salah satu murid Hadratus Syekh KH. Hasyim Asy’ari. Setelah menimba ilmu, beliau memiliki tekad besar untuk merintis usaha sendiri di tengah kondisi ekonomi yang sulit pada era kemerdekaan. Dengan ketekunan, kesabaran, dan semangat untuk bangkit dari keterpurukan, beliau memulai usaha sate secara sederhana dari sebuah warung kecil berbahan anyaman bambu yang berada di halaman rumah milik pasangan warga keturunan Tionghoa yang kemudian berpindah ke Surabaya. Seiring waktu, usaha tersebut perlahan berkembang menjadi bangunan kayu yang menjadi cikal bakal Warung Sate H. Faqih.</p>
+                            <p data-i18n="history_founder_desc2">Setelah mengalami perkembangan dan renovasi, bangunan sederhana itu kemudian berubah menjadi rumah makan yang lebih layak untuk melayani pelanggan. Dari tangan beliau, racikan sate dengan cita rasa khas keluarga mulai dikenal oleh masyarakat Cukir, Jombang, hingga tumbuh menjadi salah satu kuliner legendaris sejak sekitar tahun 1950-an. Dalam perkembangannya, usaha yang semula dikenal sebagai Warung Sate H. Faqih ini kemudian diteruskan oleh keluarga dan dikenal hingga sekarang dengan nama Warung Sate H. Faqih 1. Hingga hari ini, semangat, resep, dan cita rasa yang diwariskan Alm. H. Faqih tetap dijaga oleh keluarga penerus, sehingga Warung Sate H. Faqih 1 bukan hanya menjadi tempat makan, tetapi juga ruang nostalgia yang menyimpan kenangan lintas generasi, baik bagi kalangan santri maupun masyarakat luas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative reveal">
+                <div class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-brand-gold/30"></div>
+                
+                <div class="timeline-list space-y-10 md:space-y-12">
+                    <div class="flex flex-col md:flex-row items-center justify-between w-full relative">
+                        <div class="absolute left-[-5px] md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-brand-gold rounded-full z-10 shadow-[0_0_15px_rgba(212,175,55,0.7)]"></div>
+                        <div class="w-full md:w-5/12 pl-8 md:pl-0 md:text-right">
+                            <h3 class="timeline-year font-serif font-bold text-brand-gold mb-3" data-i18n="timeline_1_period">1950</h3>
+                            <h4 class="timeline-title font-bold text-white mb-3 leading-tight" data-i18n="timeline_1_title">Awal dari Warung Anyaman Bambu</h4>
+                        </div>
+                        <div class="w-full md:w-5/12 pl-8 md:pl-0 mt-2 md:mt-0">
+                            <p class="timeline-desc" data-i18n="timeline_1_desc">Berawal dari sebuah warung kecil berbahan anyaman bambu di halaman rumah, Alm. H. Faqih mulai merintis usaha sate dengan ketekunan dan cita rasa khas keluarga.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row-reverse items-center justify-between w-full relative">
+                        <div class="absolute left-[-5px] md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-brand-gold rounded-full z-10"></div>
+                        <div class="w-full md:w-5/12 pl-8 md:pl-0 md:text-left">
+                            <h3 class="timeline-year font-serif font-bold text-brand-gold mb-3" data-i18n="timeline_2_period">1967-an</h3>
+                            <h4 class="timeline-title font-bold text-white mb-3 leading-tight" data-i18n="timeline_2_title">Berkembang Menjadi Bangunan Kayu</h4>
+                        </div>
+                        <div class="w-full md:w-5/12 pl-8 md:pl-0 mt-2 md:mt-0 md:text-right">
+                            <p class="timeline-desc" data-i18n="timeline_2_desc">Seiring bertambahnya pelanggan, warung sederhana tersebut perlahan berkembang menjadi bangunan kayu yang menjadi tempat singgah masyarakat, santri, dan pendatang.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row items-center justify-between w-full relative">
+                        <div class="absolute left-[-5px] md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-brand-gold rounded-full z-10 shadow-[0_0_15px_rgba(212,175,55,0.7)]"></div>
+                        <div class="w-full md:w-5/12 pl-8 md:pl-0 md:text-right">
+                            <h3 class="timeline-year font-serif font-bold text-brand-gold mb-3" data-i18n="timeline_3_period">1978</h3>
+                            <h4 class="timeline-title font-bold text-white mb-3 leading-tight" data-i18n="timeline_3_title">Renovasi Menjadi Rumah Makan</h4>
+                        </div>
+                        <div class="w-full md:w-5/12 pl-8 md:pl-0 mt-2 md:mt-0">
+                            <p class="timeline-desc" data-i18n="timeline_3_desc">Setelah mengalami perkembangan, bangunan kayu kemudian direnovasi menjadi rumah makan yang lebih layak dan nyaman untuk melayani pelanggan.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row-reverse items-center justify-between w-full relative">
+                        <div class="absolute left-[-5px] md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-brand-orange rounded-full z-10 shadow-[0_0_15px_rgba(200,75,49,0.7)]"></div>
+                        <div class="w-full md:w-5/12 pl-8 md:pl-0 md:text-left">
+                            <h3 class="timeline-year font-serif font-bold text-brand-gold mb-3" data-i18n="timeline_4_period">Masa Kini</h3>
+                            <h4 class="timeline-title font-bold text-white mb-3 leading-tight" data-i18n="timeline_4_title">Diteruskan Lintas Generasi</h4>
+                        </div>
+                        <div class="w-full md:w-5/12 pl-8 md:pl-0 mt-2 md:mt-0 md:text-right">
+                            <p class="timeline-desc" data-i18n="timeline_4_desc">Warung Sate H. Faqih 1 terus dijaga oleh keluarga penerus dengan mempertahankan resep, cita rasa, dan nilai perjuangan yang diwariskan Alm. H. Faqih.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Galeri Foto Section -->
+<section id="guests" class="premium-gallery-section py-12 lg:py-16 bg-brand-light border-b border-brand-brown/10 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="mb-10 reveal">
+            <span class="text-brand-orange font-medium tracking-widest text-sm uppercase" data-i18n="guest_subtitle">
+                Galeri Foto
+            </span>
+
+            <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-dark mt-2" data-i18n="guest_title">
+                Pernah Singgah di Warung Kami
+            </h2>
+
+            <div class="w-24 h-1 bg-brand-gold mx-auto mt-6"></div>
+
+            <p class="text-gray-600 mt-6 max-w-2xl mx-auto leading-relaxed" data-i18n="guest_instruction">
+                Momen hangat para tokoh dan pelanggan yang pernah singgah di warung kami.
+            </p>
+        </div>
+    </div>
+
+    <div class="space-y-14 lg:space-y-16">
+        <div class="reveal delay-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
+                <span class="inline-block px-6 py-2 rounded-full bg-white shadow-sm border border-brand-gold/40 text-brand-brown font-semibold tracking-wide text-sm uppercase" data-i18n="guest_label_figures">
+                    Foto Tokoh
+                </span>
+            </div>
+
+            <div class="gallery-full-bleed">
+                <div class="gallery-marquee">
+                    <div class="gallery-track gallery-track-tokoh" data-gallery-track>
+                    <div class="gallery-card rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer img-container group" onclick="openModal('assets/images/TOKOH1.png', 'guest_1_name', 'guest_1_desc', 'guest_1_caption')">
+                        <div class="gallery-card-image overflow-hidden relative bg-brand-cream">
+                            <img loading="eager" data-gallery-src="assets/images/TOKOH1.png" src="assets/images/TOKOH1.png" alt="KH. Mustofa Bisri menikmati sate" onerror="this.onerror=null; this.src='assets/images/Warung.png';" class="w-full h-full object-cover object-center zoom-hover">
+                            <div class="absolute inset-0 bg-brand-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fas fa-search-plus text-white text-4xl drop-shadow-lg"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body p-5 border-t-[3px] border-brand-gold">
+                            <h4 class="font-serif text-2xl font-bold text-brand-dark mb-1" data-i18n="guest_1_name">KH. Mustofa Bisri, Istri & Ning Alissa Wahid</h4>
+                            <p class="gallery-label gallery-role text-brand-orange text-sm font-bold uppercase tracking-wide mb-4" data-i18n="guest_1_role">Ulama, Budayawan & Tokoh GUSDURian</p>
+                            <p class="gallery-quote text-gray-600 italic text-sm leading-relaxed" data-i18n="guest_1_caption">""Silaturahmi sederhana yang menjadi bagian dari kenangan Warung Sate H. Faqih 1.""</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer img-container group" onclick="openModal('assets/images/TOKOH2.png', 'guest_2_name', 'guest_2_desc', 'guest_2_caption')">
+                        <div class="gallery-card-image overflow-hidden relative bg-brand-cream">
+                            <img loading="eager" data-gallery-src="assets/images/TOKOH2.png" src="assets/images/TOKOH2.png" alt="KH. Hasyim Muzadi menikmati sate" onerror="this.onerror=null; this.src='assets/images/Warung.png';" class="w-full h-full object-cover object-center zoom-hover">
+                            <div class="absolute inset-0 bg-brand-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fas fa-search-plus text-white text-4xl drop-shadow-lg"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body p-5 border-t-[3px] border-brand-gold">
+                            <h4 class="font-serif text-2xl font-bold text-brand-dark mb-1" data-i18n="guest_2_name">KH. Hasyim Muzadi</h4>
+                            <p class="gallery-label gallery-role text-brand-orange text-sm font-bold uppercase tracking-wide mb-4" data-i18n="guest_2_role">Ulama, Cendekiawan & Tokoh Nasional</p>
+                            <p class="gallery-quote text-gray-600 italic text-sm leading-relaxed" data-i18n="guest_2_caption">"Silaturahmi sederhana yang menjadi bagian dari perjalanan panjang Warung Sate H. Faqih 1."</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer img-container group" onclick="openModal('assets/images/TOKOH3.png', 'guest_3_name', 'guest_3_desc', 'guest_3_caption')">
+                        <div class="gallery-card-image overflow-hidden relative bg-brand-cream">
+                            <img loading="eager" data-gallery-src="assets/images/TOKOH3.png" src="assets/images/TOKOH3.png" alt="KH. Ishaq Latief & KH. Ridho Amir beserta Istri menikmati sate" onerror="this.onerror=null; this.src='assets/images/Warung.png';" class="w-full h-full object-cover object-center zoom-hover">
+                            <div class="absolute inset-0 bg-brand-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fas fa-search-plus text-white text-4xl drop-shadow-lg"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body p-5 border-t-[3px] border-brand-gold">
+                            <h4 class="font-serif text-2xl font-bold text-brand-dark mb-1" data-i18n="guest_3_name">KH. Ishaq Latief & KH. Ridho Amir beserta Istri</h4>
+                            <p class="gallery-label gallery-role text-brand-orange text-sm font-bold uppercase tracking-wide mb-4" data-i18n="guest_3_role">Ulama & Tokoh Agama</p>
+                            <p class="gallery-quote text-gray-600 italic text-sm leading-relaxed" data-i18n="guest_3_caption">"Momen silaturahmi penuh kehangatan di Warung Sate H. Faqih 1."</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer img-container group" onclick="openModal('assets/images/TOKOH4.png', 'guest_4_name', 'guest_4_desc', 'guest_4_caption')">
+                        <div class="gallery-card-image overflow-hidden relative bg-brand-cream">
+                            <img loading="eager" data-gallery-src="assets/images/TOKOH4.png" src="assets/images/TOKOH4.png" alt="Gus Miftah menikmati sate" onerror="this.onerror=null; this.src='assets/images/Warung.png';" class="w-full h-full object-cover object-center zoom-hover">
+                            <div class="absolute inset-0 bg-brand-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fas fa-search-plus text-white text-4xl drop-shadow-lg"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body p-5 border-t-[3px] border-brand-gold">
+                            <h4 class="font-serif text-2xl font-bold text-brand-dark mb-1" data-i18n="guest_4_name">Gus Miftah</h4>
+                            <p class="gallery-label gallery-role text-brand-orange text-sm font-bold uppercase tracking-wide mb-4" data-i18n="guest_4_role">Pendakwah & Pengasuh Ponpes Ora Aji</p>
+                            <p class="gallery-quote text-gray-600 italic text-sm leading-relaxed" data-i18n="guest_4_caption">"Momen silaturahmi hangat di Warung Sate H. Faqih 1."</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer img-container group" onclick="openModal('assets/images/TOKOH5.png', 'guest_5_name', 'guest_5_desc', 'guest_5_caption')">
+                        <div class="gallery-card-image overflow-hidden relative bg-brand-cream">
+                            <img loading="eager" data-gallery-src="assets/images/TOKOH5.png" src="assets/images/TOKOH5.png" alt="Buya Husein Muhammad & Sahabat Gus Dur menikmati sate" onerror="this.onerror=null; this.src='assets/images/Warung.png';" class="w-full h-full object-cover object-center zoom-hover">
+                            <div class="absolute inset-0 bg-brand-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fas fa-search-plus text-white text-4xl drop-shadow-lg"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body p-5 border-t-[3px] border-brand-gold">
+                            <h4 class="font-serif text-2xl font-bold text-brand-dark mb-1" data-i18n="guest_5_name">Buya Husein Muhammad & Sahabat Gus Dur</h4>
+                            <p class="gallery-label gallery-role text-brand-orange text-sm font-bold uppercase tracking-wide mb-4" data-i18n="guest_5_role">Ulama, Cendekiawan & Aktivis HAM</p>
+                            <p class="gallery-quote text-gray-600 italic text-sm leading-relaxed" data-i18n="guest_5_caption">"Momen silaturahmi hangat di Warung Sate H. Faqih 1."</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer img-container group" onclick="openModal('assets/images/TOKOH6.png', 'guest_6_name', 'guest_6_desc', 'guest_6_caption')">
+                        <div class="gallery-card-image overflow-hidden relative bg-brand-cream">
+                            <img loading="eager" data-gallery-src="assets/images/TOKOH6.png" src="assets/images/TOKOH6.png" alt="Anies Baswedan menikmati sate" onerror="this.onerror=null; this.src='assets/images/Warung.png';" class="w-full h-full object-cover object-center zoom-hover">
+                            <div class="absolute inset-0 bg-brand-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fas fa-search-plus text-white text-4xl drop-shadow-lg"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body p-5 border-t-[3px] border-brand-gold">
+                            <h4 class="font-serif text-2xl font-bold text-brand-dark mb-1" data-i18n="guest_6_name">Anies Baswedan</h4>
+                            <p class="gallery-label gallery-role text-brand-orange text-sm font-bold uppercase tracking-wide mb-4" data-i18n="guest_6_role">Akademisi, Aktivis & Tokoh Nasional</p>
+                            <p class="gallery-quote text-gray-600 italic text-sm leading-relaxed" data-i18n="guest_6_caption">"Momen hangat saat bersantap di Warung Sate H. Faqih 1."</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer img-container group" onclick="openModal('assets/images/TOKOH7.png', 'guest_7_name', 'guest_7_desc', 'guest_7_caption')">
+                        <div class="gallery-card-image overflow-hidden relative bg-brand-cream">
+                            <img loading="eager" data-gallery-src="assets/images/TOKOH7.png" src="assets/images/TOKOH7.png" alt="Khofifah Indar Parawansa beserta Putra menikmati sate" onerror="this.onerror=null; this.src='assets/images/Warung.png';" class="w-full h-full object-cover object-center zoom-hover">
+                            <div class="absolute inset-0 bg-brand-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fas fa-search-plus text-white text-4xl drop-shadow-lg"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body p-5 border-t-[3px] border-brand-gold">
+                            <h4 class="font-serif text-2xl font-bold text-brand-dark mb-1" data-i18n="guest_7_name">Khofifah Indar Parawansa beserta Putra</h4>
+                            <p class="gallery-label gallery-role text-brand-orange text-sm font-bold uppercase tracking-wide mb-4" data-i18n="guest_7_role">Gubernur Jawa Timur & Tokoh Muslimat NU</p>
+                            <p class="gallery-quote text-gray-600 italic text-sm leading-relaxed" data-i18n="guest_7_caption">"Momen silaturahmi hangat di Warung Sate H. Faqih 1."</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer img-container group" onclick="openModal('assets/images/TOKOH8.png', 'guest_8_name', 'guest_8_desc', 'guest_8_caption')">
+                        <div class="gallery-card-image overflow-hidden relative bg-brand-cream">
+                            <img loading="eager" data-gallery-src="assets/images/TOKOH8.png" src="assets/images/TOKOH8.png" alt="Dahlan Iskan beserta Istri menikmati sate" onerror="this.onerror=null; this.src='assets/images/Warung.png';" class="w-full h-full object-cover object-center zoom-hover">
+                            <div class="absolute inset-0 bg-brand-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fas fa-search-plus text-white text-4xl drop-shadow-lg"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body p-5 border-t-[3px] border-brand-gold">
+                            <h4 class="font-serif text-2xl font-bold text-brand-dark mb-1" data-i18n="guest_8_name">Dahlan Iskan beserta Istri</h4>
+                            <p class="gallery-label gallery-role text-brand-orange text-sm font-bold uppercase tracking-wide mb-4" data-i18n="guest_8_role">Tokoh Pers, Pengusaha Media & Mantan Menteri BUMN</p>
+                            <p class="gallery-quote text-gray-600 italic text-sm leading-relaxed" data-i18n="guest_8_caption">"Momen silaturahmi hangat di Warung Sate H. Faqih 1."</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer img-container group" onclick="openModal('assets/images/TOKOH9.png', 'guest_9_name', 'guest_9_desc', 'guest_9_caption')">
+                        <div class="gallery-card-image overflow-hidden relative bg-brand-cream">
+                            <img loading="eager" data-gallery-src="assets/images/TOKOH9.png" src="assets/images/TOKOH9.png" alt="Muhaimin Iskandar / Cak Imin menikmati sate" onerror="this.onerror=null; this.src='assets/images/Warung.png';" class="w-full h-full object-cover object-center zoom-hover">
+                            <div class="absolute inset-0 bg-brand-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fas fa-search-plus text-white text-4xl drop-shadow-lg"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body p-5 border-t-[3px] border-brand-gold">
+                            <h4 class="font-serif text-2xl font-bold text-brand-dark mb-1" data-i18n="guest_9_name">Muhaimin Iskandar / Cak Imin</h4>
+                            <p class="gallery-label gallery-role text-brand-orange text-sm font-bold uppercase tracking-wide mb-4" data-i18n="guest_9_role">Politisi & Tokoh Nasional</p>
+                            <p class="gallery-quote text-gray-600 italic text-sm leading-relaxed" data-i18n="guest_9_caption">"Silaturahmi penuh kehangatan di Warung Sate H. Faqih 1."</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer img-container group" onclick="openModal('assets/images/TOKOH10.png', 'guest_10_name', 'guest_10_desc', 'guest_10_caption')">
+                        <div class="gallery-card-image overflow-hidden relative bg-brand-cream">
+                            <img loading="eager" data-gallery-src="assets/images/TOKOH10.png" src="assets/images/TOKOH10.png" alt="Mahfud MD menikmati sate" onerror="this.onerror=null; this.src='assets/images/Warung.png';" class="w-full h-full object-cover object-center zoom-hover">
+                            <div class="absolute inset-0 bg-brand-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fas fa-search-plus text-white text-4xl drop-shadow-lg"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body p-5 border-t-[3px] border-brand-gold">
+                            <h4 class="font-serif text-2xl font-bold text-brand-dark mb-1" data-i18n="guest_10_name">Mahfud MD</h4>
+                            <p class="gallery-label gallery-role text-brand-orange text-sm font-bold uppercase tracking-wide mb-4" data-i18n="guest_10_role">Pakar Hukum Tata Negara & Tokoh Nasional</p>
+                            <p class="gallery-quote text-gray-600 italic text-sm leading-relaxed" data-i18n="guest_10_caption">"Momen silaturahmi hangat di Warung Sate H. Faqih 1."</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer img-container group" onclick="openModal('assets/images/TOKOH11.png', 'guest_11_name', 'guest_11_desc', 'guest_11_caption')">
+                        <div class="gallery-card-image overflow-hidden relative bg-brand-cream">
+                            <img loading="eager" data-gallery-src="assets/images/TOKOH11.png" src="assets/images/TOKOH11.png" alt="Jenderal Pol. Timur Pradopo beserta Rombongan" onerror="this.onerror=null; this.src='assets/images/Warung.png';" class="w-full h-full object-cover object-center zoom-hover">
+                            <div class="absolute inset-0 bg-brand-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fas fa-search-plus text-white text-4xl drop-shadow-lg"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body p-5 border-t-[3px] border-brand-gold">
+                            <h4 class="font-serif text-2xl font-bold text-brand-dark mb-1" data-i18n="guest_11_name">Jenderal Pol. Timur Pradopo beserta Rombongan</h4>
+                            <p class="gallery-label gallery-role text-brand-orange text-sm font-bold uppercase tracking-wide mb-4" data-i18n="guest_11_role">Mantan Kapolri & Tokoh Kepolisian Nasional</p>
+                            <p class="gallery-quote text-gray-600 italic text-sm leading-relaxed" data-i18n="guest_11_caption">"Momen kebersamaan saat bersantap di Warung Sate H. Faqih 1."</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal delay-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
+                <span class="inline-block px-6 py-2 rounded-full bg-white shadow-sm border border-brand-gold/40 text-brand-brown font-semibold tracking-wide text-sm uppercase" data-i18n="visitor_label">
+                    Foto Pengunjung
+                </span>
+
+                <p class="text-gray-500 text-sm mt-3 max-w-2xl mx-auto leading-relaxed" data-i18n="visitor_intro">
+                    Momen kebersamaan pelanggan yang menjadi bagian dari cerita Warung Sate H. Faqih 1.
+                </p>
+            </div>
+
+            <div class="gallery-full-bleed">
+                <div class="gallery-marquee">
+                    <div class="gallery-track gallery-track-pengunjung" data-gallery-track>
+                    <div class="gallery-card rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer img-container group" onclick="openModal('assets/images/pelanggan1.png', 'visitor_1_name', 'visitor_1_desc', 'visitor_1_caption')">
+                        <div class="gallery-card-image overflow-hidden relative bg-brand-cream">
+                            <img loading="eager" data-gallery-src="assets/images/pelanggan1.png" src="assets/images/pelanggan1.png" alt="Keluarga makan bersama di warung" onerror="this.onerror=null; this.src='assets/images/Warung.png';" class="w-full h-full object-cover object-center zoom-hover">
+                            <div class="absolute inset-0 bg-brand-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fas fa-search-plus text-white text-4xl drop-shadow-lg"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body p-5 border-t-[3px] border-brand-gold">
+                            <h4 class="font-serif text-2xl font-bold text-brand-dark mb-1" data-i18n="visitor_1_name">Makan Bersama di Warung</h4>
+                            <p class="gallery-label gallery-role text-brand-orange text-sm font-bold uppercase tracking-wide mb-4" data-i18n="visitor_1_role">Suasana Kebersamaan</p>
+                            <p class="gallery-quote text-gray-600 italic text-sm leading-relaxed" data-i18n="visitor_1_caption">"Momen sederhana saat pelanggan berkumpul dan menikmati hidangan di Warung Sate H. Faqih 1."</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer img-container group" onclick="openModal('assets/images/pelanggan2.png', 'visitor_2_name', 'visitor_2_desc', 'visitor_2_caption')">
+                        <div class="gallery-card-image overflow-hidden relative bg-brand-cream">
+                            <img loading="eager" data-gallery-src="assets/images/pelanggan2.png" src="assets/images/pelanggan2.png" alt="Rombongan Pelanggan" onerror="this.onerror=null; this.src='assets/images/Warung.png';" class="w-full h-full object-cover object-center zoom-hover">
+                            <div class="absolute inset-0 bg-brand-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fas fa-search-plus text-white text-4xl drop-shadow-lg"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body p-5 border-t-[3px] border-brand-gold">
+                            <h4 class="font-serif text-2xl font-bold text-brand-dark mb-1" data-i18n="visitor_2_name">Rombongan Pelanggan</h4>
+                            <p class="gallery-label gallery-role text-brand-orange text-sm font-bold uppercase tracking-wide mb-4" data-i18n="visitor_2_role">Singgah Bersama</p>
+                            <p class="gallery-quote text-gray-600 italic text-sm leading-relaxed" data-i18n="visitor_2_caption">"Kebersamaan rombongan pelanggan menjadi bagian dari kenangan di Warung Sate H. Faqih 1."</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer img-container group" onclick="openModal('assets/images/pelanggan3.png', 'visitor_3_name', 'visitor_3_desc', 'visitor_3_caption')">
+                        <div class="gallery-card-image overflow-hidden relative bg-brand-cream">
+                            <img loading="eager" data-gallery-src="assets/images/pelanggan3.png" src="assets/images/pelanggan3.png" alt="Makan Bersama Keluarga" onerror="this.onerror=null; this.src='assets/images/Warung.png';" class="w-full h-full object-cover object-center zoom-hover">
+                            <div class="absolute inset-0 bg-brand-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fas fa-search-plus text-white text-4xl drop-shadow-lg"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body p-5 border-t-[3px] border-brand-gold">
+                            <h4 class="font-serif text-2xl font-bold text-brand-dark mb-1" data-i18n="visitor_3_name">Makan Bersama Keluarga</h4>
+                            <p class="gallery-label gallery-role text-brand-orange text-sm font-bold uppercase tracking-wide mb-4" data-i18n="visitor_3_role">Hangat & Akrab</p>
+                            <p class="gallery-quote text-gray-600 italic text-sm leading-relaxed" data-i18n="visitor_3_caption">"Momen kebersamaan keluarga yang menikmati hidangan di Warung Sate H. Faqih 1."</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer img-container group" onclick="openModal('assets/images/pelanggan4.png', 'visitor_4_name', 'visitor_4_desc', 'visitor_4_caption')">
+                        <div class="gallery-card-image overflow-hidden relative bg-brand-cream">
+                            <img loading="eager" data-gallery-src="assets/images/pelanggan4.png" src="assets/images/pelanggan4.png" alt="Pelanggan Setia" onerror="this.onerror=null; this.src='assets/images/Warung.png';" class="w-full h-full object-cover object-center zoom-hover">
+                            <div class="absolute inset-0 bg-brand-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fas fa-search-plus text-white text-4xl drop-shadow-lg"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body p-5 border-t-[3px] border-brand-gold">
+                            <h4 class="font-serif text-2xl font-bold text-brand-dark mb-1" data-i18n="visitor_4_name">Pelanggan Setia</h4>
+                            <p class="gallery-label gallery-role text-brand-orange text-sm font-bold uppercase tracking-wide mb-4" data-i18n="visitor_4_role">Rasa yang Dirindukan</p>
+                            <p class="gallery-quote text-gray-600 italic text-sm leading-relaxed" data-i18n="visitor_4_caption">"Banyak pelanggan kembali bukan hanya karena rasa, tetapi juga karena suasana yang terasa akrab."</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer img-container group" onclick="openModal('assets/images/pelanggan5.png', 'visitor_5_name', 'visitor_5_desc', 'visitor_5_caption')">
+                        <div class="gallery-card-image overflow-hidden relative bg-brand-cream">
+                            <img loading="eager" data-gallery-src="assets/images/pelanggan5.png" src="assets/images/pelanggan5.png" alt="Makan Bersama Keluarga" onerror="this.onerror=null; this.src='assets/images/Warung.png';" class="w-full h-full object-cover object-center zoom-hover">
+                            <div class="absolute inset-0 bg-brand-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fas fa-search-plus text-white text-4xl drop-shadow-lg"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body p-5 border-t-[3px] border-brand-gold">
+                            <h4 class="font-serif text-2xl font-bold text-brand-dark mb-1" data-i18n="visitor_5_name">Makan Bersama Keluarga</h4>
+                            <p class="gallery-label gallery-role text-brand-orange text-sm font-bold uppercase tracking-wide mb-4" data-i18n="visitor_5_role">Cerita Pelanggan</p>
+                            <p class="gallery-quote text-gray-600 italic text-sm leading-relaxed" data-i18n="visitor_5_caption">"Sepiring sate dan gule menjadi pelengkap obrolan hangat bersama keluarga."</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer img-container group" onclick="openModal('assets/images/pelanggan6.png', 'visitor_6_name', 'visitor_6_desc', 'visitor_6_caption')">
+                        <div class="gallery-card-image overflow-hidden relative bg-brand-cream">
+                            <img loading="eager" data-gallery-src="assets/images/pelanggan6.png" src="assets/images/pelanggan6.png" alt="Singgah dan Bernostalgia" onerror="this.onerror=null; this.src='assets/images/Warung.png';" class="w-full h-full object-cover object-center zoom-hover">
+                            <div class="absolute inset-0 bg-brand-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <i class="fas fa-search-plus text-white text-4xl drop-shadow-lg"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-card-body p-5 border-t-[3px] border-brand-gold">
+                            <h4 class="font-serif text-2xl font-bold text-brand-dark mb-1" data-i18n="visitor_6_name">Singgah dan Bernostalgia</h4>
+                            <p class="gallery-label gallery-role text-brand-orange text-sm font-bold uppercase tracking-wide mb-4" data-i18n="visitor_6_role">Momen Pelanggan</p>
+                            <p class="gallery-quote text-gray-600 italic text-sm leading-relaxed" data-i18n="visitor_6_caption">"Setiap kunjungan menyimpan cerita, dari rasa yang dikenang hingga suasana yang terasa dekat."</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Reviews Section -->
+    <section id="reviews" class="premium-reviews-section py-12 lg:py-16 bg-brand-cream border-b border-brand-gold/10 overflow-hidden">
+        <div class="w-full px-4 sm:px-8 lg:px-16 xl:px-24">
+            <div class="text-center mb-8 reveal">
+                <div class="flex justify-center items-center text-brand-gold mb-2 text-3xl">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="text-xl font-bold text-brand-dark mb-4">4.3 / 5.0</p>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-brand-dark mb-2" data-i18n="review_title">Kata Mereka Tentang Kami</h2>
+                <p class="text-gray-600 mb-8" data-i18n="review_subtitle">Berdasarkan lebih dari 700+ ulasan otentik pelanggan di Google Maps.</p>
+                
+                <a href="https://maps.app.goo.gl/7ckUtFgsHXxk6HTP6" target="_blank" rel="noopener noreferrer" onclick="trackEvent('click_maps', { event_category: 'location', event_label: 'Google Maps' })" class="cta-3d inline-flex items-center space-x-3 border border-gray-300 bg-white px-8 py-4 rounded-full shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google" class="w-6 h-6">
+                    <span class="font-medium text-brand-dark" data-i18n="review_btn">Lihat Semua Ulasan di Google Maps</span>
+                </a>
+            </div>
+
+            <!-- Slider Ulasan Pelanggan -->
+            <div class="relative w-full px-4 sm:px-8 lg:px-16 xl:px-24 reveal delay-100">
+                <!-- Tombol Navigasi Slider -->
+                <button id="btn-prev-review" onclick="slideLeft()" class="absolute left-0 top-1/2 transform -translate-y-1/2 -ml-2 md:-ml-6 z-10 w-10 h-10 md:w-14 md:h-14 bg-white rounded-full shadow-lg flex items-center justify-center text-brand-orange hover:bg-brand-orange hover:text-white transition-colors cursor-pointer border border-gray-100">
+                    <i class="fas fa-chevron-left md:text-xl"></i>
+                </button>
+                <button id="btn-next-review" onclick="slideRight()" class="absolute right-0 top-1/2 transform -translate-y-1/2 -mr-2 md:-mr-6 z-10 w-10 h-10 md:w-14 md:h-14 bg-white rounded-full shadow-lg flex items-center justify-center text-brand-orange hover:bg-brand-orange hover:text-white transition-colors cursor-pointer border border-gray-100">
+                    <i class="fas fa-chevron-right md:text-xl"></i>
+                </button>
+
+                <!-- Track Slider -->
+                <div id="reviews-container" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 px-2 md:px-4 hide-scrollbar scroll-smooth">
+                    <!-- Review 1 -->
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[420px] bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-brand-orange cursor-grab active:cursor-grabbing">
+                        <div class="flex text-brand-gold text-sm mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="text-gray-700 italic mb-6 leading-relaxed" data-i18n="rev_1">"Makanannya enak dan sedaap, apabila ingin menyantap satai ayam/kambing dan makanan lainnya enak mampir di sate Faqih nih. Yang punya darah rendah jg joz langsung berkeringat setelah mam menambah energi. Barokallah semuanya"</p>
+                        <div class="flex items-center space-x-3 mt-auto">
+                            <div class="w-10 h-10 bg-brand-dark text-white rounded-full flex items-center justify-center font-bold">B</div>
+                            <div>
+                                <p class="font-bold text-sm text-brand-dark">Iha Siti Hajar</p>
+                                <p class="text-xs text-gray-500" data-i18n="review_time_1">seminggu yang lalu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[420px] bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-brand-gold cursor-grab active:cursor-grabbing">
+                        <div class="flex text-brand-gold text-sm mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="text-gray-700 italic mb-6 leading-relaxed" data-i18n="rev_2">"Wajib mampir ke sini kalo sambang anak di Jombang. Satenya empuk dan bumbu kacangnya pun nikmat..."</p>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-brand-orange text-white rounded-full flex items-center justify-center font-bold">D</div>
+                            <div>
+                                <p class="font-bold text-sm text-brand-dark">dian nofilia</p>
+                                <p class="text-xs text-gray-500" data-i18n="review_time_2">2 bulan lalu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[420px] bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-brand-brown cursor-grab active:cursor-grabbing">
+                        <div class="flex text-brand-gold text-sm mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="text-gray-700 italic mb-6 leading-relaxed" data-i18n="rev_3">"Langganan sate kl ke Jombang, harga tidak murah tp juga tidak mahal. Rasa sate lumayan enak. Gulenya tidak berbau"</p>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-[#1A1A1A] text-white rounded-full flex items-center justify-center font-bold">A</div>
+                            <div>
+                                <p class="font-bold text-sm text-brand-dark">muhammad birrulalim</p>
+                                <p class="text-xs text-gray-500" data-i18n="review_time_3">5 bulan lalu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 4 (Tambahan agar slider terasa lebih panjang) -->
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[420px] bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-brand-dark cursor-grab active:cursor-grabbing">
+                        <div class="flex text-brand-gold text-sm mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="text-gray-700 italic mb-6 leading-relaxed" data-i18n="rev_4">"Sate dan gulenya mantap! Potongan daging besar-besar, kuah gule medok rempahnya berasa banget. Wajib mampir kalau lagi di Jombang atau lewat Mojowarno."</p>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-brand-gold text-white rounded-full flex items-center justify-center font-bold">S</div>
+                            <div>
+                                <p class="font-bold text-sm text-brand-dark">Siti Nurhaliza</p>
+                                <p class="text-xs text-gray-500" data-i18n="review_time_4">5 bulan lalu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 5 -->
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[420px] bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-brand-orange cursor-grab active:cursor-grabbing">
+                        <div class="flex text-brand-gold text-sm mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="text-gray-700 italic mb-6 leading-relaxed" data-i18n="rev_5">"Warung sate legendaris
+                        Sangat lezat sampai sekarang
+                        Empuk dan bumbu rasa kacang sangat nendang
+                        Maknyus sekali"</p>
+                        <div class="flex items-center space-x-3 mt-auto">
+                            <div class="w-10 h-10 bg-brand-dark text-white rounded-full flex items-center justify-center font-bold">B</div>
+                            <div>
+                                <p class="font-bold text-sm text-brand-dark">Ipoeng Hufron</p>
+                                <p class="text-xs text-gray-500" data-i18n="review_time_5">8 bulan lalu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 6 -->
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[420px] bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-brand-gold cursor-grab active:cursor-grabbing">
+                        <div class="flex text-brand-gold text-sm mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="text-gray-700 italic mb-6 leading-relaxed" data-i18n="rev_6">"Alhamdulillah, sudah tahun-tahunan makan Sate di Warung Sate H. Faqih. Sejak dari umur 15 tahun. Satenya enak, banyak gajih dan pesan untuk yang hati saja juga bisa. Cocok untuk keluarga besar untuk makan di sini. Semoga nanti pulang dari perantauan terus balik ke Jombang bisa makan di sini lagi."</p>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-brand-orange text-white rounded-full flex items-center justify-center font-bold">D</div>
+                            <div>
+                                <p class="font-bold text-sm text-brand-dark">Yusron Sayoga Yuwono</p>
+                                <p class="text-xs text-gray-500" data-i18n="review_time_6">1 tahun lalu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 7 -->
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[420px] bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-brand-brown cursor-grab active:cursor-grabbing">
+                        <div class="flex text-brand-gold text-sm mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="text-gray-700 italic mb-6 leading-relaxed" data-i18n="rev_7">"rasa gule nya endul banget guysss trus sate nya juga enak lah ya tapi gule nya yang paling suedeppp pollll."</p>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-[#1A1A1A] text-white rounded-full flex items-center justify-center font-bold">A</div>
+                            <div>
+                                <p class="font-bold text-sm text-brand-dark">Nesya Syafa resyana</p>
+                                <p class="text-xs text-gray-500" data-i18n="review_time_7">1 tahun lalu</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 8 -->
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[420px] bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border-t-4 border-brand-dark cursor-grab active:cursor-grabbing">
+                        <div class="flex text-brand-gold text-sm mb-4"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="text-gray-700 italic mb-6 leading-relaxed" data-i18n="rev_8">"Dulu langganan alm. Ayah saya. Sekarang lebih sepi daripada yg dulu. Tapi tetap menjaga rasa, kebersihan dan keramahan."</p>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-brand-gold text-white rounded-full flex items-center justify-center font-bold">S</div>
+                            <div>
+                                <p class="font-bold text-sm text-brand-dark">Dian Regina</p>
+                                <p class="text-xs text-gray-500" data-i18n="review_time_8">1 tahun lalu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="premium-faq-section py-12 lg:py-16 bg-[#FDFBF7] relative border-b border-brand-gold/10">
+        <div class="w-full px-4 sm:px-8 lg:px-16 xl:px-24">
+            <div class="text-center mb-12 reveal">
+                <span class="text-brand-orange font-medium tracking-widest text-sm uppercase" data-i18n="faq_subtitle">Informasi Pelanggan</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-brand-dark mt-2 mb-4" data-i18n="faq_title">Pertanyaan Seputar Warung</h2>
+            </div>
+            
+            <div class="space-y-4 reveal">
+                <!-- FAQ 1 -->
+                <details class="group bg-white rounded-2xl shadow-sm border-l-4 border-brand-gold hover:shadow-lg transition-all duration-300 [&_summary::-webkit-details-marker]:hidden overflow-hidden">
+                    <summary class="faq-question flex items-center justify-between cursor-pointer p-6 lg:p-8 font-bold text-brand-dark">
+                        <span data-i18n="faq_q1">Apakah melayani pesanan aqiqah?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 flex-shrink-0 ml-4 w-10 h-10 rounded-full bg-brand-light flex items-center justify-center text-brand-orange">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="faq-answer px-6 lg:px-8 pb-6 lg:pb-8" data-i18n="faq_a1">
+                        Tentu saja. Kami melayani acara aqiqah. Kami sarankan untuk menghubungi nomor WhatsApp kami minimal H-3 agar kami dapat mempersiapkan kualitas daging dan layanan terbaik.
+                    </div>
+                </details>
+                <!-- FAQ 2 -->
+                <details class="group bg-white rounded-2xl shadow-sm border-l-4 border-brand-gold hover:shadow-lg transition-all duration-300 [&_summary::-webkit-details-marker]:hidden overflow-hidden">
+                    <summary class="faq-question flex items-center justify-between cursor-pointer p-6 lg:p-8 font-bold text-brand-dark">
+                        <span data-i18n="faq_q2">Apakah bisa melakukan reservasi tempat untuk akhir pekan?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 flex-shrink-0 ml-4 w-10 h-10 rounded-full bg-brand-light flex items-center justify-center text-brand-orange">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="faq-answer px-6 lg:px-8 pb-6 lg:pb-8" data-i18n="faq_a2">
+                        Ya, sangat bisa. Menjelang akhir pekan atau hari libur nasional, warung kami biasanya sangat ramai. Agar tidak perlu antri meja, Anda bisa melakukan reservasi tempat melalui WhatsApp dengan menyebutkan jumlah rombongan dan estimasi jam kedatangan.
+                    </div>
+                </details>
+                <!-- FAQ 3 -->
+                <details class="group bg-white rounded-2xl shadow-sm border-l-4 border-brand-gold hover:shadow-lg transition-all duration-300 [&_summary::-webkit-details-marker]:hidden overflow-hidden">
+                    <summary class="faq-question flex items-center justify-between cursor-pointer p-6 lg:p-8 font-bold text-brand-dark">
+                        <span data-i18n="faq_q3">Bagaimana cara agar sate tetap enak jika dibawa pulang ke luar kota?</span>
+                        <span class="transition-transform duration-300 group-open:rotate-180 flex-shrink-0 ml-4 w-10 h-10 rounded-full bg-brand-light flex items-center justify-center text-brand-orange">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <div class="faq-answer px-6 lg:px-8 pb-6 lg:pb-8" data-i18n="faq_a3">
+                        Jika Anda ingin membawa sate sebagai oleh-oleh ke luar kota (perjalanan lebih dari 3 jam), sampaikan kepada kasir/pelayan kami. Kami akan mengemas bumbu kacang/kecap secara terpisah dan memastikan sate dibakar dengan tingkat kematangan yang aman untuk dipanaskan ulang (di-microwave/teflon) di rumah.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Order Online -->
+    <section id="location" class="premium-location-section py-12 lg:py-16 bg-brand-dark text-white relative">
+        <div class="w-full px-4 sm:px-8 lg:px-16 xl:px-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
+                
+                <!-- Map Side -->
+                <div class="flex flex-col w-full h-[400px] lg:h-auto min-h-[450px] reveal">
+                    <div class="w-full h-full rounded-3xl overflow-hidden shadow-2xl border border-white/10 relative group bg-gray-800">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1216.524327667256!2d112.23966076962016!3d-7.610889570234933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e786a073def9ff9%3A0xee2713e940f0310!2sWarung%20Sate%20H.%20FAQIH%201!5e1!3m2!1sid!2sus!4v1776968689847!5m2!1sid!2sus" 
+                            class="absolute inset-0 w-full h-full grayscale-[20%] group-hover:grayscale-0 transition-all duration-700" 
+                            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                        
+                        <!-- Floating Map Button -->
+                        <a href="https://maps.app.goo.gl/7ckUtFgsHXxk6HTP6" target="_blank" rel="noopener noreferrer" onclick="trackEvent('click_maps', { event_category: 'location', event_label: 'Google Maps' })" class="cta-3d absolute bottom-6 left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:left-auto lg:right-6 bg-white text-brand-dark px-5 py-3 rounded-full shadow-xl font-bold text-sm hover:bg-brand-orange hover:text-white transition-all duration-300 z-10 flex items-center gap-2 group-hover:-translate-y-2 hover:scale-105 cursor-pointer">
+                            <i class="fas fa-map-marker-alt text-brand-orange group-hover:text-white transition-colors"></i> <span data-i18n="loc_btn_map">Buka Rute di Google Maps</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Info & Order Buttons -->
+                <div class="flex flex-col justify-center reveal delay-100">
+                    <div>
+                        <h2 class="font-serif text-4xl md:text-5xl font-bold text-brand-gold mb-6" data-i18n="loc_title">Kunjungi & Pesan</h2>
+                        <p class="text-brand-cream/80 mb-10 text-lg leading-relaxed" data-i18n="loc_desc">Nikmati sajian legendaris langsung di tempat kami dengan kehangatan khas H. Faqih 1, atau pesan melalui platform online untuk dinikmati bersama keluarga di rumah.</p>
+                        
+                        <div class="mb-12 bg-black/20 backdrop-blur-sm p-6 md:p-8 rounded-3xl border border-brand-gold/10 shadow-xl">
+                            <div class="flex items-start space-x-5">
+                                <div class="w-12 h-12 rounded-full bg-brand-orange/10 flex items-center justify-center shrink-0">
+                                    <i class="fas fa-clock text-brand-orange text-2xl"></i>
+                                </div>
+                                <div class="pt-1">
+                                    <h4 class="font-bold text-xl text-brand-gold mb-2" data-i18n="loc_hours">Jam Operasional</h4>
+                                    <p class="text-brand-cream/80 leading-relaxed" data-i18n="loc_hours_value">Setiap Hari: 08:00 - 20:00 WIB</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kotak Order yang Mewah dan Menggoda -->
+                    <div id="order" class="mt-4 lg:mt-auto bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 shadow-2xl relative overflow-hidden">
+                        <!-- Aksen Decorative Oranye -->
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-brand-orange/20 rounded-full blur-3xl"></div>
+                        
+                        <h4 class="font-serif font-bold text-3xl mb-3 text-brand-gold flex items-center gap-3">
+                            <span class="relative flex h-4 w-4">
+                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-orange opacity-75"></span>
+                              <span class="relative inline-flex rounded-full h-4 w-4 bg-brand-orange"></span>
+                            </span>
+                            <span data-i18n="order_title">Pesan Online</span>
+                        </h4>
+                        <p class="text-brand-cream/80 mb-8 text-base leading-relaxed relative z-10" data-i18n="order_subtitle">Pilih platform pengiriman favorit Anda untuk memesan, atau hubungi kami langsung melalui WhatsApp.</p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3 mt-6 relative z-10">
+<a href="https://food.grab.com/id/id/restaurant/warung-sate-h-faqih-1-cukir-delivery/6-C2BXGKDANA2ER2" target="_blank" rel="noopener noreferrer" onclick="trackEvent('click_grabfood', { event_category: 'order', event_label: 'GrabFood' })" class="order-btn col-span-1 w-full min-w-0 px-4 py-3 bg-gradient-to-r from-[#00B14F] to-[#009140] text-white rounded-xl hover:scale-[1.03] hover:shadow-[0_10px_25px_rgba(0,177,79,0.4)] transition-all duration-300 flex items-center justify-center gap-2 shadow-lg whitespace-nowrap overflow-hidden">
+    <img loading="lazy" src="assets/images/grabfood.png" alt="GrabFood" class="w-7 h-7 md:w-8 md:h-8 object-contain shrink-0">
+    <span class="truncate font-bold text-[15px] md:text-lg tracking-tight">GrabFood</span>
+</a>
+
+<a href="https://gofood.link/a/yXVsXZS" target="_blank" rel="noopener noreferrer" onclick="trackEvent('click_gofood', { event_category: 'order', event_label: 'GoFood' })" class="order-btn col-span-1 w-full min-w-0 px-4 py-3 bg-gradient-to-r from-[#EE2737] to-[#D11C28] text-white rounded-xl hover:scale-[1.03] hover:shadow-[0_10px_25px_rgba(238,39,55,0.4)] transition-all duration-300 flex items-center justify-center gap-2 shadow-lg whitespace-nowrap overflow-hidden">
+    <img loading="lazy" src="assets/images/gofood.png" alt="GoFood" class="w-7 h-7 md:w-8 md:h-8 object-contain shrink-0">
+    <span class="truncate font-bold text-[15px] md:text-lg tracking-tight">GoFood</span>
+</a>
+
+<a href="https://shopee.co.id/universal-link/now-food/shop/22797679" target="_blank" rel="noopener noreferrer" onclick="trackEvent('click_shopeefood', { event_category: 'order', event_label: 'ShopeeFood' })" class="order-btn col-span-1 w-full min-w-0 px-4 py-3 bg-gradient-to-r from-[#EE4D2D] to-[#D13C1C] text-white rounded-xl hover:scale-[1.03] hover:shadow-[0_10px_25px_rgba(238,77,45,0.4)] transition-all duration-300 flex items-center justify-center gap-2 shadow-lg whitespace-nowrap overflow-hidden">
+    <img loading="lazy" src="assets/images/shopeefood.png" alt="ShopeeFood" class="w-7 h-7 md:w-8 md:h-8 object-contain shrink-0">
+    <span class="truncate font-bold text-[15px] md:text-lg tracking-tight">ShopeeFood</span>
+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0a0a0a] text-gray-400 pt-14 pb-8 border-t border-white/10">
+    <div class="w-full px-4 sm:px-8 lg:px-16 xl:px-24">
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14 mb-10 text-sm">
+            
+            <!-- Brand / Logo -->
+            <!-- Brand / Logo -->
+<div class="reveal text-center md:text-left">
+    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-5">
+        
+        <!-- Logo -->
+                    <img loading="lazy" 
+                        src="assets/images/logo.png?v=2" 
+                        alt="Logo Warung Sate H. Faqih 1" 
+                        class="h-24 md:h-28 w-auto object-contain drop-shadow-xl brightness-110 fallback-img shrink-0"
+                    >
+
+                    <!-- Teks di samping logo -->
+                    <div class="pt-1">
+                        <div class="w-14 h-1 bg-brand-orange rounded-full mb-4 mx-auto sm:mx-0"></div>
+
+                        <p class="leading-relaxed text-gray-300 max-w-[300px]" data-i18n="footer_desc">
+                            Warung Sate H. Faqih 1 menyajikan kelezatan sate legendaris dengan resep warisan keluarga yang dijaga sejak 1950.
+                        </p>
+
+                        <div class="mt-5 flex flex-wrap justify-center sm:justify-start gap-2">
+                            <span class="px-3 py-1 rounded-full border border-brand-orange/30 text-brand-orange text-xs font-semibold" data-i18n="footer_badge_since">
+                                Sejak 1950
+                            </span>
+                            <span class="px-3 py-1 rounded-full border border-brand-gold/30 text-brand-gold text-xs font-semibold" data-i18n="footer_badge_recipe">
+                                Resep Warisan
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- Contact -->
+            <div class="reveal delay-100 text-center md:text-left">
+                <h4 class="font-bold text-white text-lg mb-5" data-i18n="footer_contact">
+                    Hubungi Kami
+                </h4>
+
+                <div class="space-y-4">
+                    <div class="flex flex-col md:flex-row items-center md:items-start gap-3">
+                        <div class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                            <i class="fas fa-location-dot text-brand-orange"></i>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed">
+                            Jl. Raya Mojowarno No.297, Cukir,<br>
+                            Jombang, Jawa Timur 61471
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row items-center md:items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                            <i class="fas fa-envelope text-brand-orange"></i>
+                        </div>
+                        <p class="text-gray-400">wrgsatehfaqih1@gmail.com</p>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row items-center md:items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                            <i class="fas fa-phone-alt text-brand-orange"></i>
+                        </div>
+                        <p class="text-gray-400">+62 812 3391 2015</p>
+                    </div>
+                </div>
+
+                <a 
+                    href="https://wa.me/6281233912015?text=Halo%20Warung%20Sate%20H.%20Faqih%201%2C%20saya%20ingin%20menyampaikan%20saran..." 
+                    data-wa-text-key="footer_feedback_wa_text"
+                    target="_blank" rel="noopener noreferrer" 
+                    onclick="trackEvent('click_whatsapp', { event_category: 'contact', event_label: 'Tombol WhatsApp' })"
+                    class="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-gray-600 text-gray-300 hover:text-brand-orange hover:border-brand-orange transition-colors duration-300"
+                >
+                    <i class="fas fa-comment-dots"></i> 
+                    <span data-i18n="footer_feedback">Kritik & Saran</span>
+                </a>
+            </div>
+
+            <!-- Social -->
+            <div class="reveal delay-200 text-center md:text-left">
+                <h4 class="font-bold text-white text-lg mb-5" data-i18n="footer_social">
+                    Media Sosial
+                </h4>
+
+                <p class="leading-relaxed text-gray-400 max-w-[300px] mx-auto md:mx-0 mb-5" data-i18n="footer_social_desc">
+                    Ikuti kami untuk melihat kabar terbaru, menu pilihan, dan suasana Warung Sate H. Faqih 1.
+                </p>
+
+                <div class="flex space-x-3 justify-center md:justify-start">
+                    <a href="https://www.facebook.com/profile.php?id=61579554899186" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full border border-gray-600 flex items-center justify-center text-white hover:bg-brand-gold hover:border-brand-gold hover:text-black transition-all">
+                        <i class="fab fa-facebook-f text-sm"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/sate.faqih1" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full border border-gray-600 flex items-center justify-center text-white hover:bg-brand-gold hover:border-brand-gold hover:text-black transition-all">
+                        <i class="fab fa-instagram text-sm"></i>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@sate.faqih1" target="_blank" rel="noopener noreferrer" class="w-11 h-11 rounded-full border border-gray-600 flex items-center justify-center text-white hover:bg-brand-gold hover:border-brand-gold hover:text-black transition-all">
+                        <i class="fab fa-tiktok text-sm"></i>
+                    </a>
+                </div>
+
+                <div class="mt-6 pt-5 border-t border-white/10 text-xs text-gray-500 leading-relaxed max-w-[300px] mx-auto md:mx-0">
+                    <p data-i18n="footer_tagline_1">Warisan rasa sejak 1950.</p>
+                    <p data-i18n="footer_tagline_2">Kelezatan yang dikenang lintas generasi.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="border-t border-white/10 pt-6 text-center text-xs text-gray-500">
+            <p data-i18n="footer_copyright">
+                Copyright &copy; <span id="year">2024</span> Warung Sate H. Faqih 1. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+    <!-- Back To Top Button -->
+    <button id="backToTop" class="cta-3d fixed bottom-[115px] md:bottom-[130px] right-6 md:right-10 z-40 bg-brand-gold text-brand-dark w-12 h-12 rounded-full shadow-lg flex items-center justify-center text-xl hover:bg-brand-orange hover:text-white transition-all duration-300 opacity-0 translate-y-10 pointer-events-none" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Kembali ke atas">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Floating WhatsApp Button Container -->
+    <div class="fixed bottom-8 md:bottom-12 right-6 md:right-10 z-50 flex items-center gap-3 group">
+        <div class="bg-white text-gray-700 px-4 py-2 rounded-lg shadow-[0_4px_12px_rgba(0,0,0,0.15)] font-medium text-sm md:text-base border border-gray-100 opacity-0 translate-x-4 pointer-events-none group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 relative after:content-[''] after:absolute after:top-1/2 after:-translate-y-1/2 after:-right-[6px] after:border-t-[6px] after:border-t-transparent after:border-b-[6px] after:border-b-transparent after:border-l-[6px] after:border-l-white whitespace-nowrap" data-i18n="wa_floating_tooltip">
+            Chat WhatsApp
+        </div>
+        <a href="https://wa.me/6281233912015" target="_blank" rel="noopener noreferrer" onclick="trackEvent('click_whatsapp', { event_category: 'contact', event_label: 'Tombol WhatsApp' })" class="cta-3d w-14 h-14 bg-gradient-to-tr from-[#128C7E] to-[#25D366] text-white rounded-full flex items-center justify-center text-3xl shadow-[0_4px_12px_rgba(0,0,0,0.3)] hover:scale-110 transition-transform" aria-label="Chat WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Script Utama -->
+    <script src="js/data.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
